@@ -1,0 +1,28 @@
+
+1. 微信登录
+
+	1. 引导用户进入授权页面同意授权，获取code
+	https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaebad409c29bab1d&redirect_uri=http%3a%2f%2fwx.weiyinstudio.com%2fwx.php%3f&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect
+	2：通过code换取网页授权access_token
+	https://api.weixin.qq.com/sns/oauth2/access_token?appid=wxaebad409c29bab1d&secret=797f1d27b8f24b19dd11a4a6e657a72e&code=081b58nw1HdtS90bXhmw1Uranw1b58nV&grant_type=authorization_code
+	3.拉取用户信息(需scope为 snsapi_userinfo)
+	https://api.weixin.qq.com/sns/userinfo?access_token=14_W8EiiF9HJb4Loon-223F1AULcxcaBjJvR0JQODh3-rNWrsOYF0Oe8GWZpTXLaLWLcQg8nCWtQEVr1miJV8dKmA&openid=OPENID&lang=zh_CN
+
+
+
+2. 获取access_token
+	1. https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=APPID&secret=APPSECRET
+
+
+3. 缓存
+	文件缓存、redis、memcache
+
+
+4. 微信推送消息接口地址
+	所有与公众号进行交互的事件和消息都会推送到此接口
+
+
+5. 发送客服消息
+	文本消息
+
+6. 被动回复消息

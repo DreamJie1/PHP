@@ -1,0 +1,30 @@
+Sql 语句复习
+常见数据库介绍
+	mysql access sqlserver oracle nosql sqlite ....
+	mysql---在7.0以上的版本被废弃    mysqli
+	数据库工程师---专项学习数据库管理
+
+
+插入数据
+insert into table (字段名，字段名，字段名) values (数据，数据，数据)，(数据，数据，数据)，(数据，数据，数据)
+数据类型如果是字符串， 一定要加引号
+
+更新语句
+update table set 字段=数据,字段=数据 where id =1
+
+查询语句
+select * from table where id=1 order by id desc limit 0, 4
+排序  order by id asc 升序   order by id desc 降序
+limit 限制查询数据的条数 limit 0, 2 从0行开始查询 2 条
+group by classid     分组统计
+
+统计查询
+1. 查询记录的总条数 count()
+2. 计算全班同学数学总成绩  sum()
+3. 最高分  max()
+4. 最低分  min()
+5. 平均分  avg()
+
+包含 include || require
+
+连接查询

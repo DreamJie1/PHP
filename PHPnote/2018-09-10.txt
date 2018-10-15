@@ -1,0 +1,35 @@
+php 基础部分
+
+1. $_GET   传值,可见  /index.php?i=1
+$_GET['i']
+ /index.php/id/1(获取不到)
+
+2. $_POST 传值  form表单域， 不可见的
+
+
+3. PHP 获取下拉菜单的数据
+<select name="city">
+	<option value="东莞">东莞</option>
+</select>
+
+4. checkbox 复选框
+数组传值  
+<input type="checkbox" name="city[]" value="广州" /> 广州
+姓名: <input type="text" name="data[name]" />
+昵称: <input type="text" name="data[nickname]" />
+
+5. 表单验证
+js 前端认证仅限于做用户体验
+提交完数据， php端一定需要对代码进行验证
+
+6. PHP 日期和时间
+PHP 时间戳， 以秒为单位  time()
+
+获取日期
+date('Y-m-d H:i:s')
+
+获取当前微秒:
+microtime(true)
+
+
+7. 数组基础

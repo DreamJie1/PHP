@@ -1,0 +1,59 @@
+
+
+1. 模型
+	数据模型：
+		1. 数据库操作
+		2. 数据的处理
+
+
+2. 团队协作开发工具
+
+	git
+
+	协作开发:
+		A : => Index.php
+		B : => Goods.php
+		C : => 10来个文件
+		D : => 5个文件
+		E : => 5个文件
+
+	合并代码：
+
+	项目管理工具 => git 、svn
+
+
+
+
+3. git 使用方法
+	设置公钥
+		ssh-keygen -t rsa -C "xxxxx@xxxxx.com"
+
+		将 C:\Users\Administrator\.ssh下的id_rsa.pub中的内容复制到git服务器端项目
+
+
+	1. 本地没有项目（项目在git服务器端）
+		下载项目: git clone （git项目地址）
+		运行 git status: 查看项目状态， 若提示错误(没有.git文件夹)， 需要对项目进行初始化: git init  （已经初始化的项目不能重新初始化）
+
+	2. git status 查看项目状态：
+		1. 红色内容表示----未添加跟踪的内容
+			需要添加： git add  <file>...   //git add index.php
+			//添加所有   git add -A  
+			//添加某个文件夹下所有内容   git add lib/*  
+
+	3. add 完之后， git status 查看项目状态， 已经添加完的内容变为绿色
+
+		绿色内容需要提交， git commit -m "本次提交注释内容"
+		//设置邮箱、设置用户名
+
+	4. git status 查看内容为空
+		没有绿色部分内容
+
+		git push git@gitee.com:tang0pan/dongligong.git master   //将代码推送至git服务器
+
+	5. 更新代码
+
+		git pull git@gitee.com:tang0pan/dongligong.git master
+
+	6. 处理冲突
+		删除多余的冲突部分

@@ -1,0 +1,25 @@
+
+1. 输入变量
+input();
+
+/index.php/home/index/index?id=1	=> input('get.id'); == $_GET['id']
+/index.php/home/index/index/id/1	=> input('param.id');
+
+基本数据的过滤
+htmlspecialchars => 转义html代码   , strip_tags => 去掉html标签
+
+2. 继承基类控制器
+
+3. success和error 方法的使用
+
+4. session 函数的使用方法
+
+
+5. ajax 异步请求
+
+
+6. 手机短信验证码
+
+7. tp5 模板语法
+
+8. 搭建系统后台模块

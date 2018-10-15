@@ -1,0 +1,28 @@
+
+1. $this->success(), $this->error(),
+	当请求方式为ajax的时候，自动以json格式返回数据
+	error方法: {"code":0,"msg":"未登录","data":"","url":"/home/login/index.html","wait":3}
+	success方法 {"code":1,"msg":"未登录","data":"","url":"/home/login/index.html","wait":3}
+2. 接口开发原则：
+	
+	1. 统一规范：
+	2. 统一返回
+	3. 接口文档
+	4. 有错就返回，终止代码继续往下执行
+
+3. 模板渲染输出
+
+4. 异步分页加载数据
+
+
+5. 滚动加载
+	浏览器滚动事件
+	可获取的数据：
+	1. 滚动条距离页面顶部的高度
+		var sTop = $(window).scrollTop();
+	2. 浏览器窗口可视区域的高度
+		var winHei = $(window).height();
+	3. 元素距离页面顶部的高度
+		var hei = $('#next-btn').parent('div').offset().top;
+		
+6. 回复评论

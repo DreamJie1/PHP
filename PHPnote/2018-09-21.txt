@@ -1,0 +1,35 @@
+
+1. OAuth2.0协议
+
+2. 微博登录
+
+	1. 引导用户到如下地址： get方法请求, 替换参数：client_id， redirect_uri
+	https://api.weibo.com/oauth2/authorize?client_id=3911964253&response_type=code&redirect_uri=http://wx.weiyinstudio.com/
+		拿到一个code
+		一个code只能使用一次
+	2. 换取Access Token： post方式请求	替换参数: client_id, client_secret,redirect_uri， code
+	https://api.weibo.com/oauth2/access_token?client_id=3911964253&client_secret=7ebbd60b716a6163e8108d9e12109de8&grant_type=authorization_code&redirect_uri=http://wx.weiyinstudio.com/&code=d0763fde68051d493b9bc4f99abb7a9e
+		拿到：
+		{
+		    "access_token": "2.00mtrEhCdbMkQE49052801fbStGD6E",
+		    "remind_in": "157679999",
+		    "expires_in": 157679999,
+		    "uid": "2468808614",
+		    "isRealName": "true"
+		}
+	
+	3. 获取用户信息 : get方法，替换参数： access_token， uid
+		https://api.weibo.com/2/users/show.json?access_token=2.00mtrEhCdbMkQE49052801fbStGD6E&uid=2468808614
+		
+相对同一个应用一个账号的 uid 是唯一的
+
+
+3. 微博登录绑定手机号码
+
+
+4. 社区帖子发表
+
+5. 百度编辑器的使用
+
+
+用不变的数据作为关联条件

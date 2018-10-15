@@ -1,0 +1,31 @@
+
+Mysql 连接查询
+
+1. 左连接查询
+left join
+右表中匹配不到的数据，以空来补全
+SELECT * FROM `oppo_note` as a left join oppo_user as b on a.user_id = b.id
+别名
+SELECT a.*, b.id as bid, b.username,b.head_img FROM `oppo_note` as a left join oppo_user as b on a.user_id = b.id
+2. 右连接查询
+right join
+
+3. 内连接查询
+inner join
+查询结果为两个表的交集
+SELECT * FROM `oppo_note` as a inner join oppo_user as b on a.user_id = b.id where a.id >０
+
+
+4. ajax异步上传图片
+
+5. 多图上传
+
+6. 以json格式存储数据
+
+7. 数据输出格式转换
+
+8. 帖子详情
+
+
+9. 帖子评论
+评论内容、user_id、帖子id， 评论时间

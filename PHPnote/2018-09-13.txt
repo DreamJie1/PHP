@@ -1,0 +1,25 @@
+//PDO
+数据库操作类的封装
+
+类封装后的用法
+
+类的调试接口
+
+类方法的整合
+
+单例模式运用
+
+
+//分页类的作用是什么?
+控制分页样式的输出
+
+
+//数据分页的原理? -->数据看操作类的事情
+index.php?page=1
+select * from table where id > 10 order by id desc limit 0,5
+index.php?page=2
+$page = $_GET['page']
+($page - 1) * 5
+select * from table where id > 10 order by id desc limit 5,5
+
+首页 上一页 1 2 3 4 5 6 下一页 尾页

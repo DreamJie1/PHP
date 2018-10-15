@@ -1,0 +1,14 @@
+JavaScript 事件
+
+//正则表达式
+
+//this 特殊的对象
+//1.触发形式传递this -> 代表触发当前事件的html元素的dom对象
+// 1. onmouseover
+// 2. onmouseout
+// 3. onchange
+// 4. onkeyup
+// 5. onkeydown
+// 6. onload	等待页面加载完成之后才执行
+// 7. onfocus  //聚焦
+// 8. onblur	//失去焦点

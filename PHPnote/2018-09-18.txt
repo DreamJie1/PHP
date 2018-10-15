@@ -1,0 +1,43 @@
+ThinkPHP 5.0框架学习
+
+
+１．　搭建虚拟域名
+	定义本地虚拟，建议以ｏｒｇ结尾，　指定访问的项目目录
+	添加本地拦截，　编辑hosts文件
+
+2. www.oppo.org 访问tp5项目
+
+3. 创建模块 ---- 命令行的方式创建模块
+
+// 读取自动生成定义文件
+$build = include '../build.php';
+// 运行自动生成
+\think\Build::run($build);
+
+创建前台模块 --home
+创建后台模块 --admin
+
+
+3. mvc 模式
+	
+	模型（M） -> model
+	视图（V） -> view
+ 	控制器（C）-> controller
+
+4. 路由解析参数说明
+
+http://www.oppo.org/index.php/home/index/index
+home --> 模块名称
+index   --> 控制器名称
+index   ---> 方法名
+
+
+5. 创建和加载模板文件
+
+
+6. 静态文件的存放、引用、包含公共模板文件
+
+login 控制器
+reg  控制器
+
+把公共的头部提取出来

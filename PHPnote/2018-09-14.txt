@@ -1,0 +1,41 @@
+
+1. 分页类 返回limit偏移量
+
+2. 分页类与数据库操作类结合使用，并实现留言数据分页
+
+3. 用数据库操作类实现留言添加功能
+
+4. 链式操作， 将数据库操作类改写为链式操作
+
+
+5. 魔术方法 __get() 、 __set() 、 __autoload()
+
+function __autoload($class){  $class == 被引用的类名
+	//在实例化、继承一个没有被引用的类的时候被自动触发
+} 
+
+//命名空间
+spl_autoload_register(function($class){ //$class = libs\Db\Mysql
+	//在实例化、继承一个没有被引用的类的时候被自动触发
+
+	//libs\Db\Mysql -> libs/Db/Mysql
+	$class_path = str_replace('\\', '/', $class);
+	$class_path .= '.class.php';
+	require_once $class_path;
+});
+
+
+
+//单一入口
+
+
+封装文件上传类
+
+
+
+
+
+
+
+
+

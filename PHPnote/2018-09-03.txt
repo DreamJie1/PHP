@@ -1,0 +1,16 @@
+1. 对学生网页开发基本知识摸底
+
+2. 复习基本网页知识
+
+3. 相对定位与绝对定位
+	position relative 与 absolute 和fixed 的用法详解，以及实际运用
+
+4. 透明度 
+	opacity 与background: rgba（）的区别
+
+5. css3 2D效果
+
+6. 布局绝对居中的技巧
+	定位与transform的结合
+
+7. 实操模仿某企业官网首页和案例页面
